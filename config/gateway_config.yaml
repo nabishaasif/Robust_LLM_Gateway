@@ -1,0 +1,10 @@
+injection_detection:
+  block_threshold: 0.60
+
+presidio:
+  score_threshold: 0.55
+
+policy:
+  default_action: "mask"
+  pii_weight: 0.15
+  secret_weight: 0.25

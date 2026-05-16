@@ -1,0 +1,35 @@
+[
+    {
+        "input_id": "case_2f0",
+        "language": "en",
+        "rule_score": 0.0,
+        "semantic_score": 0.44,
+        "pii_entities": [
+            {
+                "type": "CNIC",
+                "score": 1.0,
+                "value": "35202-1234567-1"
+            },
+            {
+                "type": "STUDENT_ID",
+                "score": 1.0,
+                "value": "FA21-BCS-123"
+            }
+        ],
+        "composite_flags": [
+            {
+                "type": "HIGH_RISK_SECRET_EXPOSURE",
+                "description": "Critical identifiers exposed",
+                "risk": "CRITICAL"
+            }
+        ],
+        "final_risk": 0.69,
+        "decision": "MASK",
+        "reason_codes": [
+            "CRITICAL_SECRET_EXPOSURE"
+        ],
+        "safe_text": "My CNIC is <CNIC> and student ID is <STUDENT_ID>.",
+        "latency_ms": 2301.68,
+        "timestamp": "2026-05-16T11:41:00.972182Z"
+    }
+]
